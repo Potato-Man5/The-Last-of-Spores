@@ -1,0 +1,126 @@
+{
+    "format_version" : "1.13.0",
+    "minecraft:biome" : {
+       "components" : {
+          "animal" : {},
+          "badger:overworld_height" : {
+             "frequency_scale": 4.0,
+             "height_params" : {
+                "average_height" : 100,
+                "clamp_heights": [50, 255]
+             },
+             "noise_params" : [ 2.40, 0.250 ],
+             "noise_type": "extreme"
+          },
+          "badger:rivers" : {
+             "cell_range" : [ 0, 3 ],
+             "point_chance" : 1.0,
+             "river_biome" : "grasslands_rivers",
+             "river_border_width" : 0,
+             "river_width" : 6
+          },
+          "badger:sub_biomes" : {
+             "borders" : [
+                {
+                   "allowlist" : [
+                      "brokenlands",
+                      "brokenlands_sanddune",
+                      "brokenlands_tarpits",
+                      "drylands",
+                      "drylands_enable_hoodoos",
+                      "burnt_grass"
+                   ],
+                   "biome" : "burnt_grass",
+                   "width" : 24
+                },
+                {
+                   "allowlist" : [
+                      "frostlands",
+                      "frostlands_hills",
+                      "frostlands_springs",
+                      "frosty_grass"
+                   ],
+                   "biome" : "frosty_grass",
+                   "width" : 24
+                },
+                {
+                   "allowlist" : [ "jungle", "jungle_hills", "sparse_jungle" ],
+                   "biome" : "sparse_jungle",
+                   "width" : 24
+                }
+             ],
+             "scatter_biomes" : [
+                {
+                   "biome" : "grasslands_mud_pit",
+                   "offSetZ" : 150.0,
+                   "scaleX" : 100,
+                   "scaleY" : 100,
+                   "threshold" : 0.8670
+                }
+             ]
+          },
+          "badger:visual_biome_attributes" : {
+             "grass" : {
+                "normal" : {
+                   "grass_noise_intensity" : 0.50,
+                   "grass_noise_scale" : 0.50,
+                   "grass_surface_color" : "#7EC24A"
+                },
+                "overlay" : {
+                   "grass_overlay_noise_bias" : 0.0,
+                   "grass_overlay_noise_intensity" : 0.3000000119209290,
+                   "grass_overlay_noise_scale" : 0.3000000119209290,
+                   "grass_overlay_surface_color" : "#1F750C"
+                }
+             },
+             "map" : {
+                "biome_banner" : "map_screen/banners/legend_banner_biome_grasslands.png",
+                "biome_display_name" : "grasslands",
+                "common_resources": ["coal", "iron", "wood"],
+                "common_resource_icon" : "/icons/resources/resource_coal.png",
+                "map_color" : "#9db987",
+                "map_color_odd" : "#9db987",
+                "map_pattern_index" : 5
+             },
+             "particulates" : {
+                "nether_spores" : 0.0,
+                "sparkles" : 0.0
+             },
+             "rain" : {
+                "downfall" : 25.0,
+                "lower_limit" : 0.4000000059604645,
+                "rain_to_snow_height" : 120,
+                "rain_to_snow_transition_size" : 5,
+                "snow_to_rain_density_ratio" : 0.75,
+                "upper_limit" : 1.0
+             },
+             "water" : {
+                "water_blur_distance" : 15.0,
+                "water_color_blend_distance" : 0.0,
+                "water_depths_color" : "#44AFF5",
+                "water_surface_color" : "#44AFF5",
+                "water_surface_transparency" : 0.6499999761581421
+             }
+          },
+          "grasslands" : {},
+          "minecraft:surface_parameters" : {
+             "default_surface" : {
+                "mid_material" : "badger:block_dirt",
+                "top_material" : "minecraft:grass"
+             },
+             "foundation_material" : "badger:block_sand",
+             "sea_floor_depth" : 8,
+             "sea_floor_material" : "badger:block_sand",
+             "sea_material" : "badger:block_water"
+          },
+          "monster" : {},
+          "overworld" : {},
+          "resource_coal" : {},
+          "resource_iron" : {}
+       },
+       "description" : {
+          "identifier" : "grasslands"
+       }
+    }
+ }
+ 

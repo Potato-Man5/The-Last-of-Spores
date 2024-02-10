@@ -1,0 +1,13 @@
+{
+    "badger:player_spawn_service": {
+        "badger:template": {
+            "game_mode": "mod_a",
+            "parent": "badger:player_spawn_service"
+        },
+        "default_mount_archetype": "badger:mount_06",
+        "min_block_radius": 100,
+        "pending_villages": [],
+        "player_archetype": "minecraft:player",
+        "respawn_seconds": 0.0
+    }
+}

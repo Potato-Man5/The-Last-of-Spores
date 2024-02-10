@@ -1,0 +1,119 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:spawner_wood_golem",
+        "runtime_identifier": "badger:buildable",
+        "is_summonable": true
+      },
+      "mushroom_data": {
+        "function": "Spawner",
+        "type": "Player"
+      },
+      "components": {
+        "badger:buildable_structure": {
+          "nbt_file": "spawner_golem_wood",
+          "build_time": 4,
+          "construction_start_trigger": "on_construction_start",
+          "construction_end_trigger": "on_construction_end",
+          "buildable_placed_player_trigger": "on_building_spawner_wood_golem"
+        },
+        "badger:buildable_presentation": {
+          "icon": "structure_spawner_golem_wood",
+          "tooltip_title": "structures.spawner.woodGolem.name",
+          "tactical_description": "structures.spawner.woodGolem.tactical_description",
+          "tooltip_description": "structures.spawner.woodGolem.description",
+          "buildable_category": "mobs",
+          "sort_order": 1000
+        },
+        "badger:respawn_point": {
+            "alliance_rule": "can_respawn"
+        },
+        "badger:buildable_requirement": {
+          "unlock": [
+            {
+              "item": "unlock_spawner_golemwood",
+              "amount": 1
+            }
+          ],
+          "recipe": [
+            {
+              "item": "wood",
+              "amount": 25
+            }
+          ],
+          "ticket_cost": [
+            {
+              "ticket": "build",
+              "amount": 1
+            }
+          ],
+          "invalid_blocks": [],
+          "invalid_block_tags": [
+            "water",
+            "lava",
+            "netherrack",
+            "gatherable_denether",
+            "piglin_base_not_buildable",
+            "barrier",
+            "world_hazard"
+          ]
+        },
+        "badger:buildable_spawner": {
+          "types": [
+            {
+              "type": "badger:mob_golem_wood",
+              "percentage": 1
+            }
+          ],
+          "batch_size_phase": {
+            "continuous_spawn_timeout": 2,
+            "phases": [
+              {
+                "threshold": 10,
+                "batch_size": 2
+              }
+            ]
+          },
+          "cap": -1,
+          "rate": 0,
+          "max_radius": 5,
+          "max_height_difference": 4,
+          "disable_wander": true,
+          "enable_recall": true,
+          "requires_input": true,
+          "has_spawn_cost": true,
+          "disable_pop_cap_culling": true
+        },
+        "badger:text_markup_icon_name": {
+          "name": "key.item.woodSpawner"
+        },
+        "badger:culture": {
+          "base_culture_a": 0
+        },
+        "badger:tags": {
+          "tags": [
+            "buildable",
+            "buildable_combat",
+            "buildable_structure",
+            "player_buildable",
+            "spawner",
+            "woodgolemspawner",
+            "onboardinggolemspawner",
+            "tier2PlayerStructure"
+          ]
+        },
+        "badger:waypoint_marker": {
+          "path": "waypoint_spawner_golem_wood",
+          "label": "structures.spawner.woodGolem.name"
+        },
+        "badger:template": [
+          "badger:template_spawner",
+          "badger:template_structure_player"
+        ],
+        "badger:village_influence": {
+          "amount": 10
+        }
+      }
+    }
+  }

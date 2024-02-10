@@ -1,0 +1,487 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:mob_golem_stone",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": true
+      },
+      "mushroom_data": {
+        "role": "Melee"
+      },
+      "components": {
+        "badger:aabb": {
+          "width": 1.01,
+          "height": 1.8
+        },
+        "badger:heartbeat": {
+          "min_expire_time": 240
+        },
+        "badger:spawn_costs": {
+          "costs": [
+            {
+              "item": "wood",
+              "amount": 1
+            }
+          ],
+          "tickets": [
+            {
+              "ticket": "spawn",
+              "amount": 1
+            }
+          ]
+        },
+        "badger:loot": {
+          "table": "common_golem"
+        },
+        "badger:movement": {
+          "move_speed": 4.5,
+          "air_control_factor": 0.5
+        },
+        "badger:physics": {
+          "gravity": -100,
+          "friction": 0.04
+        },
+        "badger:collision_weight": {
+          "weight": 100.0
+        },
+        "badger:wander": {
+          "wander_frequency": 0.1,
+          "wander_radius": 2.5
+        },
+        "badger:tags": {
+          "tags": [
+            "stone_golem",
+            "melee",
+            "mob",
+            "rider",
+            "luredirect",
+            "frontline",
+            "golem",
+            "stone_golem_onboarding"
+          ]
+        },
+        "badger:unit_direct_tags" : {
+          "tags": [
+            "unit_direct_mob",
+            "unit_direct_frontline",
+            "unit_direct_stone_golem"
+          ]
+        },
+        "badger:health": {
+          "max_health": 75
+        },
+        "badger:targeting": {
+          "targeting_priorities": [
+            //Potion Close Up Mob targeting
+            {
+              "name": "stone_potion_mob_melee",
+              "max_range": 5,
+              "enable_with_line_of_sight": true,
+              "disable_on_navigation_failure": true,
+              "disabled_duration": 1.5,
+              "action_tickets": {
+                "cc": 1
+              },
+              "include_tags": [
+                "mob"
+              ],
+              "exclude_tags": [
+                "animal",
+                "donotattack"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "potion_melee_attack"
+              ]
+            },
+            //Close Up Mob targeting
+            {
+              "name": "stone_mob_melee",
+              "max_range": 1,
+              "enable_with_line_of_sight": true,
+              "disable_on_navigation_failure": true,
+              "disabled_duration": 1.5,
+              "action_tickets": {
+                "cc": 1
+              },
+              "include_tags": [
+                "mob"
+              ],
+              "exclude_tags": [
+                "animal",
+                "donotattack"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "melee_attack"
+              ]
+            },
+            //Celebrate
+            {
+              "name": "celebrate",
+              "max_range": 100,
+              "include_tags": [
+                "player"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "friendly",
+              "actions": [
+                "celebration"
+              ]
+            },
+            //Buildable targeting
+            {
+              "name": "stone_buildable_ground_pound",
+              "max_range": 10,
+              "enable_with_line_of_sight": true,
+              "include_tags": [
+                "buildable_combat"
+              ],
+              "exclude_tags": [
+                "wall",
+                "donotattack",
+                "pigGoldMine"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "ground_pound_attack"
+              ]
+            },
+            {
+              "name": "stone_portal_ground_pound",
+              "max_range": 25,
+              "enable_with_line_of_sight": true,
+              "include_tags": [
+                "portal_hurtbox"
+              ],
+              "exclude_tags": [
+                "wall",
+                "donotattack",
+                "pigGoldMine"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "ground_pound_attack"
+              ]
+            },
+            {
+              "name": "stone_wall_ground_pound",
+              "max_range": 2,
+              "enable_with_line_of_sight": true,
+              "include_tags": [
+                "wall"
+              ],
+              "exclude_tags": [
+                "piglin_wall",
+                "donotattack"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "ground_pound_attack"
+              ]
+            },
+            {
+              "name": "stone_wall_ground_pound_nav_fail",
+              "max_range": 3,
+              "enable_with_line_of_sight": true,
+              "disable_on_navigation_failure": true,
+              "disabled_duration": 1.5,
+              "include_tags": [
+                "wall"
+              ],
+              "exclude_tags": [
+                "piglin_wall",
+                "donotattack"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "ground_pound_attack"
+              ]
+            },
+            //Mob targeting
+            {
+              "name": "stone_mob_melee",
+              "max_range": 18,
+              "enable_with_line_of_sight": true,
+              "disable_on_navigation_failure": true,
+              "disabled_duration": 1.5,
+              "action_tickets": {
+                "cc": 1
+              },
+              "include_tags": [
+                "mob"
+              ],
+              "exclude_tags": [
+                "animal",
+                "donotattack"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "melee_attack"
+              ]
+            },
+            //General targeting
+            {
+              "name": "stone_general_melee",
+              "max_range": 18,
+              "enable_with_line_of_sight": true,
+              "disable_on_navigation_failure": true,
+              "disabled_duration": 1.5,
+              "include_tags": [],
+              "exclude_tags": [
+                "buildable_combat",
+                "portal_hurtbox",
+                "wall",
+                "donotattack"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "melee_attack"
+              ]
+            },
+            {
+              "name": "stone_goldmine_ground_pound",
+              "max_range": 2,
+              "enable_with_line_of_sight": true,
+              "include_tags": [
+                "pigGoldMine"
+              ],
+              "exclude_tags": [
+                "wall",
+                "donotattack"
+              ],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "ground_pound_attack"
+              ]
+            }
+          ]
+        },
+        "badger:damage_receiver": {
+          "auto_generate_shape": "cylinder",
+          "damage_resistances": {
+            "hazard": 0.5,
+            "blunt": 10.0,
+            "stomp": 0.42,
+            "grenade": 2.0,
+            "spore": 1.1,
+            "poison": 1.25
+          }
+        },
+        "badger:resist_status": {
+          "spore_healed": {
+            "resisted": true,
+            "time": 5.0,
+            "resistance_persist_time": 0
+          },
+          "stunned": {
+            "resisted": false,
+            "time": 0.5,
+            "resistance_persist_time": 0
+          },
+          "burning": {
+            "resisted": false,
+            "time": 0.5,
+            "resistance_persist_time": 0
+          }
+        },
+        "badger:action_tickets": {
+          "action_tickets": {
+            "cc": 4,
+            "sc": 4,
+            "rc": 2,
+            "ht": 1,
+            "ct": 1
+          }
+        },
+        "badger:target_actions": {
+          "actions": [
+            {
+              "name": "stone_approach",
+              "range": {
+                "max_range": 15
+              }
+            },
+            {
+              "name": "melee_attack",
+              "trigger": "on_melee_attack",
+              "on_hit_target_trigger": "on_golem_stone_melee_attack_hit",
+              "predictive_windup": false,
+              "range": {
+                "max_range": 1.0
+              },
+              "transfer_activation": [
+                "buffed_melee_attack"
+              ],
+              "state_machine": {
+                "wind_up": 0.75,
+                "wind_down": 0.75,
+                "cooldown_time": 0.25,
+                "deactivates_on_cooldown": false
+              },
+              "interruptible": {},
+              "shape_area_damage": {
+                "shape": {
+                  "type": "cylinder",
+                  "radius": 1.3,
+                  "height": 1.2,
+                  "position": [
+                    0.0,
+                    0.5,
+                    1.8
+                  ]
+                },
+                "collision": {
+                  "include_tags": [],
+                  "exclude_tags": [
+                    "buildable",
+                    "buildable_combat"
+                  ],
+                  "alliance_rule_filter": "enemy"
+                },
+                "requires_los": true,
+                "damage": {
+                  "damage_amount": 2.0,
+                  "damage_types": [
+                    "crush",
+                    "smash"
+                  ]
+                },
+                "apply_status": {
+                  "engaged": {
+                    "chance": 1.0,
+                    "strength": 1.0
+                  }
+                }
+              }
+            },
+            {
+              "name": "ground_pound_attack",
+              "trigger": "on_ground_pound_attack",
+              "on_hit_target_trigger": "on_golem_stone_melee_attack_hit",
+              "range": {
+                "max_range": 1.0
+              },
+              "state_machine": {
+                "wind_up": 1.0,
+                "wind_down": 1.75,
+                "cooldown_time": 0,
+                "activation_time": 3,
+                "deactivates_on_cooldown": false
+              },
+              "interruptible": {},
+              "shape_area_damage": {
+                "shape": {
+                  "type": "wedge",
+                  "aperture_angle": 90,
+                  "radius": 2.75,
+                  "thickness": 2.2,
+                  "position": [
+                    0.0,
+                    1.0,
+                    0.25
+                  ]
+                },
+                "collision": {
+                  "include_tags": [],
+                  "exclude_tags": [],
+                  "alliance_rule_filter": "enemy"
+                },
+                "requires_los": true,
+                "damage": {
+                  "damage_amount": 5.0,
+                  "spread_damage_over_duration": true,
+                  "damage_types": [
+                    "crush",
+                    "smash"
+                  ]
+                },
+                "apply_status": {
+                  "engaged": {
+                    "chance": 1.0,
+                    "strength": 1.0
+                  }
+                }
+              }
+            },
+            {
+              "name": "secondary_combat_position",
+              "range": {
+                "min_range": 3,
+                "max_range": 4
+              }
+            }
+          ]
+        },
+        "badger:aoe": {
+          "shape": {
+            "type": "sphere",
+            "radius": 1.3,
+            "position": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "timer": {
+            "interval": 3,
+            "jitter": [-1,0,1]
+          },
+          "damage_effects": [
+            {
+              "damage": 0,
+              "damage_types": [
+              ],
+              "include_tags": [
+                "mob"
+              ],
+              "exclude_tags": [
+              ],
+              "apply_status": {
+                "small_collide": {
+                  "strength": 1.0
+                }
+              },
+              "alliance_rule_filter": "enemy"
+            }
+          ]
+        },
+        "badger:rider": {
+          "include_tags": [
+            "mount"
+          ],
+          "alliance_rule_filter": "friendly"
+        },
+        "badger:knockback_resistance": {
+          "affected_scale": 0.75
+        },
+        "badger:village_influence": {
+          "amount": 5
+        },
+        "badger:fall_damage": {
+          "min_damage_distance": 5,
+          "min_damage": 20
+        },
+        "badger:refundable": {
+          "priority": 2,
+          "refund_multiplier": 1.0
+        },
+        "badger:telemetry_track_banner_order": {
+          "enabled": true
+        },
+        "badger:conditionally_solid_blocks": {
+          "include_tags": [
+            "barrier_waterfall"
+          ],
+          "exclude_tags": []
+        },
+        "badger:template": [
+          "badger:template_mob",
+          "badger:component_leash_on_stop_default",
+          "badger:component_becomes_lost_default",
+          "badger:component_difficulty_modifiers_mob_stone"
+        ]
+      }
+    }
+  }

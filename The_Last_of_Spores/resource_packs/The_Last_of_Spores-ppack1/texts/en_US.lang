@@ -1,0 +1,10 @@
+mod_a.title=The Last of Spores	### Pack name
+mod_a.description=Big hills call for big solutions.	### Pack description
+wiki.title=The Last of Spores	### I don't know what this does
+
+mod_a.reward.title=Complete!	### Text that shows when you win
+mod_a.objective=Destroyed the sole portal	### Objective text that indicates what you're supposed to do.
+
+
+mod_a.intro.message=Stop the Piglins from spreading any more spores!	### Objective message title
+mod_a.intro.message.title=Destroy the Nether Spreader Base!	### Objective message title

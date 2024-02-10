@@ -1,0 +1,31 @@
+{
+    "badger:template": { "game_mode": "mod_a", "parent": "game_rules" },
+    "defaults": {
+        "autosaveenabled": true,
+        "bsharpenabled": true,
+        "campaignactsenabled": false,
+        "creativemodedefault": false,
+        "devplaygroundenabled": true,
+        "difficultymodeenabled": true,
+        "dodaylightcycle": false,
+        "dofogofwar": false,
+        "doplayersinvincible": false,
+        "doweathercycle": false,
+        "enablecinematicdeaths": false,
+        "enableunlocks": true,
+        "entitystreamingenabled": true,
+        "exclusiveluredunits": true,
+        "mapenabled": true,
+        "onboardingenabledcampaign": false,
+        "onboardingenabledpvp": false,
+        "popcapenabled": true,
+        "precachestructures": true,
+        "randomstartingteam": false,
+        "saveonquitenabled": true,
+        "skip_lobby_creation": true,
+        "teamcolors": false,
+        "use_flatlands_level_id": false,
+        "useactiontelemetry": false,
+        "worldsizeaxischunks": 100
+    }
+}

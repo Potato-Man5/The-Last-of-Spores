@@ -1,0 +1,134 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:mount_tiger",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:aabb": {
+                "width": 1.5,
+                "length": 1.5,
+                "height": 1.6
+            },
+            "badger:physics": {
+                "gravity": -60,
+                "friction": 0.1,
+                "buoyancy": 30,
+                "water_drag": 0.25,
+                "water_submerged_ratio": 0.75
+            },
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 20.0,
+                "waypoint_max_range": 20.0,
+                "compass_max_range": "short"
+            },
+            "badger:waypoint_marker": {
+                "path": "temp_waypoint_purple_tiger",
+                "label": "",
+                "world_position_offset": [
+                    0,
+                    7,
+                    0
+                ]
+            },
+            "badger:telemetry_category": {
+                "category_name": "Mount Ability"
+            },
+            "badger:entity_collision": {},
+            "badger:world_collision": {
+                "has_collision": true,
+                "auto_step": 2.1,
+                "interpolation_speed": 24,
+                "interpolate_from_height": false
+            },
+            "badger:interacts_with_blocks": {},
+            "badger:collision_weight": {
+                "weight": 100
+            },
+            "badger:movement": {
+                "move_speed": 12.5,
+                "air_control_factor": 0.4,
+				"enable_air_control_on_knockback": true
+            },
+            "badger:jump": {
+                "initial_height": 0.0,
+                "hold_velocity": {
+                    "start": -40.0,
+                    "end": -15.0
+                },
+                "hold_duration": 0.85,
+                "jump_from_water": false
+            },
+            "badger:fall_damage": {
+                "min_damage_distance": 24,
+                "min_damage": 20,
+                "trigger_event": "on_fall_damage_received"
+            },
+            "badger:tags": {
+                "tags": [
+                    "cavalry",
+                    "blocks_respawn"
+                ]
+            },
+            "badger:mount": {
+                "include_tags": [
+                    "rider"
+                ],
+                "alliance_rule_filter": "friendly",
+                "unlock_requirement": "unlock_quest_mount_01",
+                "base_skin": "badger:mount_tiger"
+            },
+            "badger:has_saddle": {
+                "search_range": 0.0,
+                "mount_range": 0.0,
+                "despawn_if_dismounted": true
+            },
+            "badger:knockback_resistance": {
+                "affected_scale": 2.0
+            },
+            "badger:sprint": {
+                "idle_time_to_deactivate": -1,
+                "sprint_status": {
+                    "apply_status": {
+                        "sprint": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                },
+                "sprint_negate_status": {
+                    "apply_status": {
+                        "sprint_negate": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                },
+                "exhausted_status": {
+                    "apply_status": {
+                        "exhausted": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                },
+                "exhausted_negate_status": {
+                    "apply_status": {
+                        "exhausted_negate": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                }
+            },
+            // NOTE: Moved "badger:stamina" component to "badger:template_mount"...
+            // ... This note can be removed after stamina component removed properly...
+            // ...during testing the mounts remain in sprint state while idle.
+            "badger:template": [
+                "badger:template_mount"
+            ]
+        }
+    }
+}

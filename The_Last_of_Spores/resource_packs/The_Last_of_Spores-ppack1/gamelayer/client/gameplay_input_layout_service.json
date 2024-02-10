@@ -1,0 +1,503 @@
+{
+    "default_toggle_duration": 0.0,
+    "input_action_durations": [
+      {
+        "name": "button.quick_build",
+        "duration": 0.25,
+        "input_types": [
+          "button_tap"
+        ]
+      },
+      {
+        "name": "button.bsharp_hold_interruptible",
+        "duration": 5,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.bsharp_hold_lute_interruptible",
+        "duration": 5,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.bsharp_hold",
+        "duration": 0.75,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.patpat_hold_long",
+        "duration": 1.5,
+        "button_down_delay": 0.5,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.bsharp_tap",
+        "duration": 0.25,
+        "input_types": [
+          "button_tap"
+        ]
+      },
+      {
+        "name": "button.bsharp_hold_lute",
+        "duration": 0.75,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.banner_lure_tap",
+        "duration": 0.5,
+        "input_types": [
+          "button_tap"
+        ]
+      },
+      {
+        "name": "button.banner_lure_hold",
+        "duration": 0.5,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.build_mode_hold",
+        "input_types": [
+          "button_press_release",
+          "button_toggle_press_release"
+        ]
+      },
+      {
+        "name": "button.place_building",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.rotate_preview_clockwise",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.rotate_preview_counterclockwise",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.ping.buildpreview.request",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.ping.buildpreview.statement",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.ping.buildpreview.gather.request",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.ping.buildpreview.gather.statement",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.ping.build.yes",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.ping.build.no",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      
+      {
+        "name": "button.banner_direct_tap",
+        "duration": 0.5,
+        "input_types": [
+          "button_tap"
+        ]
+      },
+      {
+        "name": "button.recall_mob",
+        "duration": 8,
+        "button_down_delay": 0.5,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.activate_spawner",
+        "duration": 0.5,
+        "input_types": [
+          "button_hold_repeat"
+        ]
+      },
+      {
+        "name": "button.refund",
+        "duration": 0.5,
+        "input_types": [
+          "button_hold_repeat"
+        ]
+      },
+      {
+        "name": "button.battle_view",
+        "input_types": [
+          "button_press_release",
+          "button_toggle_press_release"
+        ]
+      },
+      {
+        "name": "button.force_move_single",
+        "duration": 0.25,
+        "input_types": [
+          "button_tap"
+        ]
+      },
+      {
+        "name": "button.force_move_all",
+        "duration": 0.25,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.attack_move_single",
+        "duration": 0.25,
+        "input_types": [
+          "button_tap"
+        ]
+      },
+      {
+        "name": "button.attack_move_all",
+        "duration": 0.25,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.aiming",
+        "duration": 0.75,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.unit_select_right",
+        "duration": 0.33,
+        "input_types": [
+          "button_down_repeat"
+        ]
+      },
+      {
+        "name": "button.unit_select_left",
+        "duration": 0.33,
+        "input_types": [
+          "button_down_repeat"
+        ]
+      },
+      {
+        "name": "button.unit_select_up",
+        "duration": 0.33,
+        "input_types": [
+          "button_down_repeat"
+        ]
+      },
+      {
+        "name": "button.unit_select_down",
+        "duration": 0.33,
+        "input_types": [
+          "button_down_repeat"
+        ]
+      },
+      {
+        "name": "button.skip_cinematic",
+        "input_types": [
+          "button_up"
+        ]
+      },
+      {
+        "name": "button.skip_cinematic_hold",
+        "duration": 1,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.show_skip_cinematic",
+        "input_types": [
+          "button_up"
+        ]
+      },
+      {
+        "name": "button.menu_zoom_in",
+        "input_types": [
+          "button_up"
+        ]
+      },
+      {
+        "name": "button.menu_zoom_out",
+        "input_types": [
+          "button_up"
+        ]
+      },
+      {
+        "name": "button.menu_center_camera",
+        "input_types": [
+          "button_up"
+        ]
+      },
+      {
+        "name": "button.tutorial_screen",
+        "duration": 0.4,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.cycle_toolbar_category_up",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.cycle_toolbar_category_down",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.cancel_interaction",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.confirm_target",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.debug_cam_slow",
+        "input_types": [
+          "button_press_release"
+        ]
+      },
+      {
+        "name": "button.fast_travel",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.swap_mounts",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.resource_trader",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_modifier",
+        "input_types": [
+          "button_press_release"
+        ]
+      },
+      {
+        "name": "button.deconstruct",
+        "duration": 0.75,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.deconstruct_upgrades",
+        "duration": 10.0,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.glide",
+        "input_types": [
+          "button_press_release"
+        ]
+      },
+      {
+        "name": "button.jump",
+        "input_types": [
+          "button_press_release"
+        ]
+      },
+      {
+        "name": "button.toggle_sprint",
+        "input_types": [
+          "button_press_release",
+          "button_toggle_press_release"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_0",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_1",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_2",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_3",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_4",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_5",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_6",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_7",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_8",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.slash_command_hotkey_9",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.toolbar_category1",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.toolbar_category2",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.toolbar_category3",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.toolbar_category4",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.unit_select_1",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.unit_select_2",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.unit_select_3",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.unit_select_4",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.unit_select_5",
+        "input_types": [
+          "button_down"
+        ]
+      },
+      {
+        "name": "button.behavior_swap",
+        "duration": 0.25,
+        "input_types": [
+          "button_hold"
+        ]
+      },
+      {
+        "name": "button.hero_action_1",
+        "duration": 0.16,
+        "input_types": [
+          "button_tap"
+        ]
+      },
+      {
+        "name": "button.hero_action_1_continuous",
+        "input_types": [
+          "button_press_release"
+        ]
+      }
+    ],
+    "lute_interactions": [
+      "button.deconstruct",
+      "button.activate_spawner",
+      "button.refund",
+      "button.bsharp_hold_lute",
+      "button.bsharp_hold_lute_interruptible",
+      "button.recall_mob"
+    ]
+  }
