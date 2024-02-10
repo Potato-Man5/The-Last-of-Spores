@@ -11,7 +11,7 @@ Make Nehter Spreader base have more spreaders and structures
 Remove permadeath when killed
 
 ## Installation
-Navigate to `%AppData%\Minecraft Legends\internalStorage\premium_cache\` on a Windows installation of the game. In each of the `behaviour_packs` and `resource_packs` folders, copy/paste the respective `mod_a` folder for each.
+Navigate to `%AppData%\Minecraft Legends\internalStorage\premium_cache\` on a Windows installation of the game. In each of the `behaviour_packs` and `resource_packs` folders, copy/paste the respective `The_Last_of_Spores-ppack0` for the `behaviour_packs` and `The_Last_of_Spores-ppack1` for the `resource_packs`.
 
 Then, start the game and navigate to the _My Myths_ tab in the _Lost Legends & Myths_ menu. You should see the mod available to play.
 > ![A screenshot of the mod installed in the main menu.](https://cdn.discordapp.com/attachments/1051882299463061545/1205772413263028244/image.png?ex=65d99611&is=65c72111&hm=c3d1cd8446eb1ee1226eef183c780005ce4a8353cc201b3e0a7e5759b0287b14&)
