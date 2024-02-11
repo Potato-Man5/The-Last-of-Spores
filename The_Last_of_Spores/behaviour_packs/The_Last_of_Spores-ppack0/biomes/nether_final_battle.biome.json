@@ -25,18 +25,23 @@
             },
             "map" : {
                "biome_banner" : "",
-               "biome_display_name" : "nether_rotters",
+               "biome_display_name" : "nether_piglin",
                "common_resource_icon" : "",
                "map_color" : "#4B0082",
                "map_color_odd" : "#4B0082",
                "map_pattern_index" : 10
             },
+            "particulates" : {
+               "nether_spores" : 0.50,
+               "sparkles" : 0.0
+            },
             "rain" : {
-                  "lower_limit": 1.0,
-                  "rain_to_snow_height" : 120,
-                  "rain_to_snow_transition_size" : 5,
-                  "upper_limit": 1.0
-               
+               "downfall" : 0.0,
+               "lower_limit": 1.0,
+               "rain_to_snow_height" : 120,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.75,
+               "upper_limit": 1.0
             },
             "water" : {
                "water_blur_distance" : 15.0,
@@ -44,12 +49,6 @@
                "water_depths_color" : "#139B74",
                "water_surface_color" : "#FF235C46",
                "water_surface_transparency" : 0.50
-            },
-            "world" : {
-               "sky_weight" : 5.0
-			   },
-            "particulates":{
-               "nether_spores" : 0.50
             }
          },
          "decorate_priority" : {},
@@ -67,11 +66,13 @@
             "sea_floor_depth" : 4,
             "sea_floor_material" : "badger:block_netherrack"
          },
+         "nether_piglin" : {},
+         "nether_piglin_final" : {},
          "nether_rotters" : {},
          "nether_rotters_lower" : {}
       },
       "description" : {
-         "identifier" : "nether_rotters"
+         "identifier" : "nether_final_battle"
       }
    }
 }

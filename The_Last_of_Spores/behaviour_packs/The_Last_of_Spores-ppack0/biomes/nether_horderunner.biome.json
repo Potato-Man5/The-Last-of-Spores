@@ -1,0 +1,117 @@
+{
+   "format_version" : "1.13.0",
+   "minecraft:biome" : {
+      "components" : {
+         "badger:overworld_height" : {
+            
+            "height_params" : {
+               "average_height" : 22,
+               "texture_heights": [20, 25]
+            }
+         },
+         "badger:visual_biome_attributes" : {
+            "grass" : {
+               "normal" : {
+                  "grass_noise_intensity" : 0.50,
+                  "grass_noise_scale" : 0.50,
+                  "grass_surface_color" : "#487A40"
+               },
+               "overlay" : {
+                  "grass_overlay_noise_bias" : 0.0,
+                  "grass_overlay_noise_intensity" : 0.3000000119209290,
+                  "grass_overlay_noise_scale" : 0.6000000238418579,
+                  "grass_overlay_surface_color" : "#090601"
+               }
+            },
+            "map" : {
+               "biome_banner" : "",
+               "biome_display_name" : "nether_horderunner",
+               "common_resource_icon" : "",
+               "map_color" : "#4B0082",
+               "map_color_odd" : "#4B0082",
+               "map_pattern_index" : 10
+            },
+            "particulates" : {
+               "nether_spores" : 0.50,
+               "sparkles" : 0.0
+            },
+            "rain" : {
+               "downfall" : 0.0,
+               "lower_limit": 1.0,
+               "rain_to_snow_height" : 120,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.75,
+               "upper_limit": 1.0
+            },
+            "water" : {
+               "water_blur_distance" : 1.0,
+               "water_color_blend_distance" : 0.0,
+               "water_depths_color" : "#3D0B0B",
+               "water_surface_color" : "#730808",
+               "water_surface_transparency" : 0.1000000014901161
+            },
+            "world" : {
+               "sky_weight" : 5.0
+            }
+         },
+         "decorate_priority" : {},
+         "minecraft:surface_parameters" : {
+            "ordered_surface" : {
+               "stacks" : [
+                  {
+                     "height_range" : [ 0, 100 ],
+                     "layers" : [
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_nylium_grass", 60 ],
+                              [ "badger:block_nylium_grass_var01", 40 ]
+                           ]
+                        },
+                         
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_netherrack_dried_var01" ]
+                              
+                           ],
+                           "depth_range" : [ 1, 2 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_netherrack_dried_platform_transition" ]
+                           ],
+                           "depth_range" : [ 1, 3 ]
+                          
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_netherrack_dried_platform_var02" ]
+                           ],
+                           "depth_range" : [ 1, 4 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_netherrack_dried_platform_var01" ]
+                           ],
+                           "depth_range" : [ 1, 5 ]
+                        }           
+                                              
+                        
+                        
+                     ],
+                     "top_down" : true
+                  }
+                 
+               ]
+            },
+            "foundation_material" : "badger:block_netherrack_dried_platform_bottom",
+            "sea_floor_depth" : 4,
+            "sea_floor_material" : "block_netherrack_dried_platform_bottom"
+         },
+         "nether_horderunner" : {},
+         "nether_horderunner_01" : {}
+      },
+      "description" : {
+         "identifier" : "nether_horderunner"
+      }
+   }
+}

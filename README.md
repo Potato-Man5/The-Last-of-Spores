@@ -7,8 +7,7 @@ The Last of Spores is an experimental mod for the PC version of _Minecraft Legen
 ## TODO
 Add a timer
 Add a Spore Guard miniboss
-Make Nehter Spreader base have more spreaders and structures
-Remove permadeath when killed
+Make portal in Nether Spreader base be invincible when spreaders are still intacts
 
 ## Installation
 Navigate to `%AppData%\Minecraft Legends\internalStorage\premium_cache\` on a Windows installation of the game. In each of the `behaviour_packs` and `resource_packs` folders, copy/paste the respective `The_Last_of_Spores-ppack0` for the `behaviour_packs` and `The_Last_of_Spores-ppack1` for the `resource_packs`.

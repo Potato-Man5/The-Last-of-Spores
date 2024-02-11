@@ -1,0 +1,137 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:piglin_super_nether_spreader",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Upgrade",
+            "type": "Piglin"
+        },
+        "components": {
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 20,
+                "waypoint_max_range": 20,
+                "compass_max_range": "short",
+                "filter_tagsets": [
+                    {
+                        "include_tags": [
+                            "base_assault"
+                        ],
+                        "exclude_tags": []
+                    }
+                ]
+            },
+            "badger:waypoint_marker": {
+                "path": "waypoint_piglin_supernether",
+                "label": "resources.unlock_journal_piglin_structure_super_nether_spreader.name",
+                "world_position_offset": [
+                    0,
+                    3,
+                    0
+                ]
+            },
+            "badger:buildable_presentation": {
+                "icon": "",
+                "buildable_category": ""
+            },
+            "badger:buildable_requirement": {
+                "exclusive_zone_alliance_rule": "enemy",
+                "invalid_blocks": [
+                    "block_lava",
+                    "water"
+                ]
+            },
+            "badger:aura_applicator": {
+                "auras": [
+                    {
+                        "include_tags": [
+                            "buffable-super_nether_spreader"
+                        ],
+                        "exclude_tags": [],
+                        "alliance_rule_filter": "friendly",
+                        "buff_id": "badger:buff_super_nether_spreader",
+                        "search_mode": "village"
+                    }
+                ]
+            },
+            "badger:buildable_structure": {
+                "nbt_file": "super_nether_spreader",
+                "build_time": 10,
+                "construction_start_trigger": "on_construction_start",
+                "construction_end_trigger": "on_construction_end"
+            },
+            "badger:ranged_target": {
+              "target_positions": [
+                [
+                  0, 
+                  3, 
+                  -3
+                ],
+                [
+                  0, 
+                  12, 
+                  -3
+                ],
+                [
+                  3, 
+                  8, 
+                  5
+                ]
+              ]
+            },
+            "badger:template": [
+                "badger:component_block_damage_default", 
+                "badger:component_generate_ruins_default", 
+                "badger:component_health_generation_default", 
+                "badger:template_structure_piglin"
+            ],
+            "badger:health": {
+                "max_health": 250
+            },
+            "badger:damage_receiver": {
+                "auto_generate_shape": "aabb",
+                "damage_resistances": {
+                    "explosion": 1.5,
+                    "crush": 1.125,
+                    "pound": 0.7,
+                    "spore": 0.0,
+                    "ranged": 0.05,
+                    "dart": 1.9,
+                    "melee": 0.15,
+                    "fire": 0.5,
+                    "chop": 0.255,
+                    "player": 0.05,
+                    "creeper": 0.67,
+                    "slam": 1.5,
+                    "smash": 0.85
+                }
+            },
+            "badger:buildable_destruction": {
+                "particle_effect": "badger:fx_destruction_neather_medium"
+            },
+            "badger:telemetry_category": {
+                "category_name": "Piglin Structure"
+            },
+            "badger:loot": {
+                "table": "piglin_super_nether_spreader"
+            },
+            "badger:tags": {
+                "tags": [
+                    "buildable", 
+                    "buildable_combat", 
+                    "buildable_structure", 
+                    "pigSpreader", 
+                    "superNetherSpreader", 
+                    "Upgrade", 
+                    "piglin", 
+                    "sns_fear",
+                    "pigCrystal", 
+                    "pigBuff"
+                ]
+            }
+        }
+    }
+}

@@ -29,7 +29,7 @@
         },
         {
             "biome": {
-                "biome": "nether_rotters",
+                "biome": "nether_final_battle",
                 "spread_priority": 1,
                 "starting_pixels": 10,
                 "total_pixels": 10
@@ -89,9 +89,9 @@
         },
         {
             "unique_card_id": "piglins",
-            "map_data": "badger:piglin_defend_faction",
-            "village_data": "badger:piglin_defend",
-            "placement_name": "invasion_defend",
+            "map_data": "badger:piglin_obstacle_faction",
+            "village_data": "badger:piglin_obstacle",
+            "placement_name": "invasion_obstacle",
             "add_to_poi_graph": true,
             "placement_type": "base",
             "tags": [
@@ -100,7 +100,7 @@
             ],
             "initial_villages": {
               "medium": {
-                "archetype": "badger:piglin_defend_medium",
+                "archetype": "badger:piglin_obstacle_medium",
                 "count": 1
               }
             },

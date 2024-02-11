@@ -186,7 +186,7 @@
                 "alliance_rule_filter": "enemy"
               },
               "damage": {
-                "damage_amount": 10,
+                "damage_amount": 100000,
                 "damage_types": [
                   "player"
                 ]

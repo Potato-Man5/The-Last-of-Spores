@@ -22,7 +22,7 @@
         "precachestructures": true,
         "randomstartingteam": false,
         "saveonquitenabled": true,
-        "skip_lobby_creation": true,
+        "skip_lobby_creation": false,
         "teamcolors": false,
         "use_flatlands_level_id": false,
         "useactiontelemetry": false,

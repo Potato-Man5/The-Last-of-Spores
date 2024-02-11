@@ -1,10 +1,39 @@
+##
+## 01 # When adding new loc strings, please:
+## 02 #   - add them in alphabetical order to minimize merge conflicts
+## 03 #   - use descending hierarchical categories (separated by .) for your key/ID (eg. resources.wood.name)
+## 04 #   - when possible, add a contextual comment / note at the end of the line with <TAB>###... For example:
+## 05 #       resources.wood.name=Wood	### The name of the Wood resource the player harvests from trees.
+## 06 #   - if a loc string is deprecated or unused, you can remove it, or append <TAB>### {Locked} Do-not-translate
+## 07 #   - if a loc string is only for internal/debug use, you can append <TAB>### {Locked} Dev-only
+## 08 #   - if a loc string is deliberately empty, use a single space; otherwise if it's pending a value, leave nothing after the =, or append <TAB>### (your comment here)
+## 09 # Note, trailing spaces will NOT be trimmed; use <TAB>s to separate your comments from the actual localization text.
+## 10 # Arguments:
+## 11 #	  - %1$s will be replaced by arguments passed contextually by the system.
+## 12 #   - %1 will use the first argument, %2 will use the second argument, and so forth
+## 13 #   - $s will format the argument as a string. $d will format the argument as a number. Contact UI for more format specifiers.
+## 14 # In-Line Text Icons:
+## 15 #   -|$[key.value]|will be replaced by an buttonIcon image. For example|$[key.tutorial]|would show an icon of "ESC" on PC.
+## 16 #   -|+[key.item.value]|will be replaced by an item image. For example|+[key.item.iron]|would show a block of iron icon.
+## 17 #   - Is it possible to combine arguments and in-line icons. For example|+[key.item.%1$s]|if the icon value is dynamically passed in.
+## 18 #   - Always have three ### after strings. Also only use a TAB not spaces.
+## 19 #   - String Lengths
+## 20 #   - Tiny/Title string: 0-30 characters.
+## 21 #   - Short string: 20-40 characters.
+## 22 #   - Moderate string: 40-60 characters.
+## 23 #   - Long string: 60-250 characters.
+## 24 #   - Journal String: Up to 400 characters.
+
 mod_a.title=The Last of Spores	### Pack name
-mod_a.description=Big hills call for big solutions.	### Pack description
+mod_a.description=Big hills call for big solutions. ### Pack description
 wiki.title=The Last of Spores	### I don't know what this does
+
+mod_a.marketplaceDescription=In this myth, destroy the Nether Spreader base. ###The description of the lost legend as seen from the marketplace.Long string: 60-250 characters
 
 mod_a.reward.title=Complete!	### Text that shows when you win
 mod_a.objective=Destroyed the sole portal	### Objective text that indicates what you're supposed to do.
 
-
 mod_a.intro.message=Stop the Piglins from spreading any more spores!	### Objective message title
 mod_a.intro.message.title=Destroy the Nether Spreader Base!	### Objective message title
+
+tips.mod_a.description=This legend is all about stopping piglins spreading spores. Beat them in 15 minutes or less.	### Description as seen from the loading screen. Long string: 60-250 characters
